@@ -1,0 +1,38 @@
+{
+  "name": "surahtml",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "gulp style js import watch",
+    "prod": "gulp prod",
+    "test": "serve dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-html-import": "0.0.2",
+    "gulp-image": "^6.2.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sitemap": "^7.7.0",
+    "workbox-build": "^6.0.2"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "bootstrap": "^4.5.0",
+    "del": "^5.1.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-purgecss": "^2.2.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "jquery": "^3.5.1",
+    "slick-carousel": "^1.8.1"
+  }
+}
