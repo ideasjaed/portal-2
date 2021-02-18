@@ -52,8 +52,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="preload" as="font" href="src/css/fonts/slick.woff" type="font/woff">
 <link rel="preload" as="font" href="assets/fonts/FsJoey/FSJoeyWeb-Regular.woff" type="font/woff" crossorigin="anonymous">
 <link rel="preload" as="font" href="assets/fonts/Barlow/Barlow-Regular.ttf" type="font/ttf" crossorigin="anonymous">
-    <link href="/src/css/vendor.min.css" rel="stylesheet">
-    <link href="/src/css/blog.css" rel="stylesheet">
+    <link href="src/css/vendor.min.css" rel="stylesheet">
+    <link href="src/css/blog.css" rel="stylesheet">
     <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
     <script type="module">
   import {Workbox} from 'https://storage.googleapis.com/workbox-cdn/releases/6.0.2/workbox-window.prod.mjs';
@@ -414,7 +414,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 <div class="row">
                                     <div class="col-12 line-bottom-50">
                                         <div>
-                                            <p> <img src="/assets/img/infografias/INEGI.png" alt="inegi" height="30"><br><br>
+                                            <p> <img src="assets/img/infografias/INEGI.png" alt="inegi" height="30"><br><br>
                                                 <span>El Índice Nacional de Precios al Consumidor (INPC) del</span><span> INEGI mide la variación de los precios de ciertos bienes</span><span> y servicios que consumen las familias en México. </span></p>
                                         </div>
                                     </div>
@@ -451,7 +451,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                     <div>
                                         <div class="diver-border">
                                             <div class="diver-square">
-                                                <img src="/assets/img/infografias/Repartir Presupuest.png" alt="repartir presupuesto">
+                                                <img src="assets/img/infografias/Repartir Presupuest.png" alt="repartir presupuesto">
                                                 <p>    Construye una base fija de ahorro destinado a la inversión. </p>
                                             </div>
                                         </div>
@@ -459,7 +459,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                     <div>
                                         <div class="diver-border">
                                             <div class="diver-square">
-                                                <img src="/assets/img/infografias/Reducir la exposicion.png" alt="reducir exposición">
+                                                <img src="assets/img/infografias/Reducir la exposicion.png" alt="reducir exposición">
                                                 <p>    Invierte en instrumentos que generen rendimientos superiores a la inflación. </p>
                                             </div>
                                         </div>
@@ -467,7 +467,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                     <div>
                                         <div class="diver-border">
                                             <div class="diver-square">
-                                                <img src="/assets/img/infografias/Disminuir rentabilidad.png" alt="disminuir rentabildiad">
+                                                <img src="assets/img/infografias/Disminuir rentabilidad.png" alt="disminuir rentabildiad">
                                                 <p>    Evita tener los ahorros debajo del colchón, guardados en el banco o en instrumentos “sin riesgo”. </p>
                                             </div>
                                         </div>
@@ -633,7 +633,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
-    <script src="/src/js/vendor.min.js"></script>
+    <script src="src/js/vendor.min.js"></script>
     <script>
         (function () {
             $("#diver-square").slick({
@@ -735,7 +735,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script>
 
         function makeplot() {
-            Plotly.d3.csv("/assets/csv/inflacion_1996-2020.csv", function(data){ processData(data) } );
+            Plotly.d3.csv("assets/csv/inflacion_1996-2020.csv", function(data){ processData(data) } );
         };
             
         function processData(allRows) {
