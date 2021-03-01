@@ -18,6 +18,21 @@ if (document.querySelector('.years-input')) {
     });
 }
 
+$('input[type=range]').on('input', function(e){
+    var min = e.target.min,
+        max = e.target.max,
+        val = e.target.value,
+        calc = (val - min) * 100 / (max - min);
+    $(e.target).css({
+        'backgroundSize': calc + '% 100%'
+    });
+    $('.value span').html(calc);
+    $('.value span').css({
+        'left': calc + '%'
+    })
+}).trigger('input');
+
+
 $(".section-slick-container").slick({
     arrows: false,
     dots: false,
@@ -126,3 +141,12 @@ function cardsButton(el){
         el.querySelector('a').click()
     }
 }
+
+
+
+
+
+if (window.matchMedia('(max-width: 991px)').matches)
+    {
+        $('.cards-patrimonio').addClass('container');
+    }

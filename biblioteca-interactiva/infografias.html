@@ -47,12 +47,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
-    <link rel="preload" as="style" href="src/css/vendor.min.css">
-<link rel="preload" as="font" href="src/css/fonts/slick.ttf" type="font/ttf">
-<link rel="preload" as="font" href="src/css/fonts/slick.woff" type="font/woff">
-<link rel="preload" as="font" href="assets/fonts/FsJoey/FSJoeyWeb-Regular.woff" type="font/woff" crossorigin="anonymous">
-<link rel="preload" as="font" href="assets/fonts/Barlow/Barlow-Regular.ttf" type="font/ttf" crossorigin="anonymous">
-<link href="../src/css/vendor.min.css" rel="stylesheet">
+    <link rel="preload" as="style" href="/inversiones/src/css/vendor.min.css">
+<link rel="preload" as="font" href="/inversiones/src/css/fonts/slick.ttf" type="font/ttf">
+<link rel="preload" as="font" href="/inversiones/src/css/fonts/slick.woff" type="font/woff">
+<link rel="preload" as="font" href="/inversiones/assets/fonts/FsJoey/FSJoeyWeb-Regular.woff" type="font/woff" crossorigin="anonymous">
+<link rel="preload" as="font" href="/inversiones/assets/fonts/Barlow/Barlow-Regular.ttf" type="font/ttf" crossorigin="anonymous">
+    <link href="/inversiones/src/css/vendor.min.css" rel="stylesheet">
     <script type="module">
   import {Workbox} from 'https://storage.googleapis.com/workbox-cdn/releases/6.0.2/workbox-window.prod.mjs';
   // Check that service workers are supported
@@ -60,10 +60,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     // // Use the window load event to keep the page load performant
     // window.addEventListener('load', () => {
-    //   navigator.serviceWorker.register('/sw.js');
+    //   navigator.serviceWorker.register('/inversiones/sw.js');
     // });
 
-    const wb = new Workbox('/sw.js');
+    const wb = new Workbox('/inversiones/sw.js');
  
     wb.addEventListener('installed', event => {
       if (event.isUpdate) {
@@ -83,7 +83,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   }
 </script>
 <meta name="theme-color" content="#2196F3">
-<link rel="manifest" href="/manifest.json">
+<link rel="manifest" href="/inversiones/manifest.json">
 
 </head>
 
@@ -92,69 +92,71 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5JSDSLP"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-    <nav class="nav-desktop">
-  <div class="row-1">
-    <a href="index.html" class="logo-nav">
-      <div>
-        <img src="../assets/images/Logo.png" height="45" alt="SURA" />
+    <div class="collapse" id="otrosNegociosCollapse">
+  <div class="container">
+    <div class="row py-5">
+      <div class="col-12 col-sm-6">
+        <h3 class="text-uppercase oculto highlight2">Estás en Inversiones SURA México</h3>
+        <div class="hr mb-4"></div>
+        <ul class="no-list">
+          <li><a class="word-b" href="https://www.suramexico.com/home/" target="_blank" rel="noopener noreferrer"><i class="mdi mdi-open-in-new"></i> Conoce SURA México &rarr;</a></li>
+          <li><a class="word-b" href="https://www.suraim.com.mx/" target="_blank" rel="noopener noreferrer"><i class="mdi mdi-open-in-new"></i> Investment Managment México &rarr;</a></li>
+          <li><a class="word-b" href="https://afore.suramexico.com/afore/" target="_blank" rel="noopener noreferrer"><i class="mdi mdi-open-in-new"></i> Afore SURA México &rarr;</a></li>
+          <li><a class="word-b" href="https://www.segurossura.com.mx/" target="_blank" rel="noopener noreferrer"><i class="mdi mdi-open-in-new"></i> Seguros SURA México &rarr;</a></li>
+        </ul>
       </div>
-    </a>
-    <div class="items-nav">
-      <div class="item-nav dropdown">
-        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
-          Afore
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-          </svg>
-        </a>
-        <div class="dropdown-menu">
-          <a href="#" class="dropdown-item">Afore 1</a>
-          <a href="#" class="dropdown-item">Afore 2</a>
-        </div>
-      </div>
-      <div class="item-nav dropdown">
-        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
-          Seguros
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-          </svg>
-        </a>
-        <div class="dropdown-menu">
-          <a href="#" class="dropdown-item">Seguros 1</a>
-          <a href="#" class="dropdown-item">Seguros 2</a>
-        </div>
-      </div>
-      <div class="item-nav">
-        <a href="#">Investment Management</a>
-      </div>
-      <div class="item-nav line-v">
-        <a href="#">(443) 310 8192</a>
-      </div>
-      <div class="item-nav dropdown">
-        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><img src="../assets/images/flags/mx.svg" height="20" class="mr-2" />
-          País
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-          </svg>
-        </a>
-        <div class="dropdown-menu">
-          <a href="#" class="dropdown-item"><img src="../assets/images/flags/co.svg" height="10" class="mr-2" />Colombia</a>
-          <a href="#" class="dropdown-item"><img src="../assets/images/flags/br.svg" height="10" class="mr-2" />Brasil</a>
-          <a href="#" class="dropdown-item"><img src="../assets/images/flags/ar.svg" height="10" class="mr-2" />Argentina</a>
-          <a href="#" class="dropdown-item"><img src="../assets/images/flags/pe.svg" height="10" class="mr-2" />Perú</a>
-        </div>
-      </div>
-      <div class="item-nav">
-        <a href="#" class="nav-item nav-link font-weight-bold ml-md-3">¿Quieres invertir?</a>
-      </div>
-      <div class="item-nav">
-        <a href="#" class="nav-item nav-link">
-          <button class="square-yellow">INICIAR SESIÓN</button>
-        </a>
+      <div class="col-12 col-sm-6">
+        <h3 class="text-uppercase oculto highlight2">Conoce más de SURA</h3>
+        <div class="hr mb-4"></div>
+        <ul class="no-list">
+          <li><a class="word-b" href="https://sura-am.com/" target="_blank" rel="noopener noreferrer"><i class="mdi mdi-open-in-new"></i> SURA Asset Management Corporativo &rarr;</a></li>
+          <li><a class="word-b" href="https://www.fundacionsura.com/" target="_blank" rel="noopener noreferrer"><i class="mdi mdi-open-in-new"></i> Fundación SURA &rarr;</a></li>
+          <li><a class="word-b" href="https://www.sura.com/arteycultura/" target="_blank" rel="noopener noreferrer"><i class="mdi mdi-open-in-new"></i> Portal de Arte y Cultura &rarr;</a></li>
+        </ul>
       </div>
     </div>
   </div>
+</div>
+<nav class="nav-desktop">
+  <div class="row-1">
+    <div class="items-nav">
+      <div class="item-nav dropdown">
+        <a  href="" class="nav-link dropdown-toggle" data-toggle="collapse" data-target="#otrosNegociosCollapse" aria-expanded="false">
+          MÁS DE SURA
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+          </svg>
+        </a>
+      </div>
+      <div class="item-nav dropdown">
+        <a href="./inversiones/llamanos.html" class="nav-link dropdown-toggle" data-toggle="dropdown">
+          CONTÁCTANOS
+        </a>
+      </div>
+      <div class="item-nav dropdown">
+        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><img src="/inversiones/assets/images/flags/mx.svg" height="20" class="mr-2" />
+          MÉXICO
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+          </svg>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item"><img src="/inversiones/assets/images/flags/co.svg" height="10" class="mr-2" />Colombia</a>
+          <a href="#" class="dropdown-item"><img src="/inversiones/assets/images/flags/br.svg" height="10" class="mr-2" />Brasil</a>
+          <a href="#" class="dropdown-item"><img src="/inversiones/assets/images/flags/ar.svg" height="10" class="mr-2" />Argentina</a>
+          <a href="#" class="dropdown-item"><img src="/inversiones/assets/images/flags/pe.svg" height="10" class="mr-2" />Perú</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<nav class="nav-desktop sticky-top">  
   <div class="row-2">
+    <a href="/inversiones/index.html" class="logo-nav">
+      <div>
+        <img src="/inversiones/assets/images/logotipo.png" height="45" alt="SURA" />
+      </div>
+    </a>
     <div class="items-nav">
       <div class="item-nav dropdown">
         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Soluciones de inversión
@@ -163,25 +165,56 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </svg>
         </a>
         <div class="dropdown-menu">
-          <a href="fondos-inteligentes.html" class="dropdown-item">Fondos Inteligentes</a>
-          <a href="portafolios-estrategicos.html" class="dropdown-item">Portafolios Estratégicos</a>
-          <a href="#" class="dropdown-item">Otros productos</a>
+          <div class="row principal">
+              <div class="submenu col-md-6">
+                <h6 class="dropdown-header">Productos</h6><hr class="rayita">
+                <a href="/inversiones/fondos-inteligentes.html" class="dropdown-item">Fondos Inteligentes</a>
+                <a href="/inversiones/portafolios-estrategicos.html" class="dropdown-item">Portafolios Estratégicos</a>
+                <a href="https://inversiones.suramexico.com/inversiones/invertir-con-sura/index.html" target="_blank" class="dropdown-item">Inversión digital</a>
+                <a href="#" class="dropdown-item">Otros productos</a><br>
+                <h6 class="dropdown-header">Inversiones SURA</h6><hr class="rayita">
+                <a href="/inversiones/por-que-sura.html" class="dropdown-item">¿Quiénes somos?</a>
+                <a href="/inversiones/guia-de-inversion.html" class="dropdown-item">Guía de inversión</a>
+              </div>
+              <div class="submenu col-md-6">
+                <h6 class="dropdown-header">Herramientas para invertir</h6><hr class="rayita">
+                <a href="http://lt.morningstar.com/qe5lcmkfgl/screener/a/default.aspx#search/tab=asset_info0/universeIds=FOMEX$$ALL_3080/pageSize=100/page=1/sortOrder=customcategoryid%20Asc" target="_blank" class="dropdown-item">Buscador de fondos</a>
+                <a href="https://www.suraim.com.mx/FondosInversion/Rendimientos" target="_blank" class="dropdown-item">Rendimientos</a>
+                <a href="/inversiones/simulador-de-inversion.html" class="dropdown-item">Simulador de inversión</a><br>
+                <h6 class="dropdown-header">Conoce</h6><hr class="rayita">
+                <a href="/inversiones/avisos-importantes.html" class="dropdown-item">Avisos importantes</a>
+                <a href="/inversiones/portafolios-estrategicos.html" class="dropdown-item">Inversión con beneficio fiscal</a>
+              </div>
+          </div>  
         </div>
       </div>
       <div class="item-nav">
-        <a href="perfil-inversionista.html">Mi perfil de inversionista</a>
-      </div>
-      <div class="item-nav">
-        <a href="#">Herramientas para invertir</a>
+        <a href="/inversiones/perfil-inversionista.html">Mi perfil de inversionista</a>
       </div>
       <!-- <div class="item-nav">
         <a href="#" class="font-weight-bold">Simulador de inversión</a>
       </div> -->
       <div class="item-nav">
-        <a href="biblioteca-interactiva/index.html">Biblioteca interactiva</a>
+        <a href="/inversiones/biblioteca-interactiva/index.html">Biblioteca interactiva</a>
+      </div>
+      <!-- <div class="item-nav">
+        <a href="/inversiones/preguntas-frecuentes.html">FAQ's</a>
+      </div> -->
+      <div class="item-nav dropdown">
+        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><strong>Quiero invertir</strong>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+          </svg>
+        </a>
+        <div class="dropdown-menu">
+              <a href="/inversiones/llamanos.html" target="_blank" class="dropdown-item">Contactar a un asesor</a>
+              <a href="https://inversiones.suramexico.com/inversiones/invertir-con-sura/index.html" class="dropdown-item">Hacerlo de forma digital</a>
+        </div>
       </div>
       <div class="item-nav">
-        <a href="preguntas-frecuentes.html">FAQ's</a>
+        <a href="#" class="nav-item nav-link">
+          <button class="square-yellow">INICIAR SESIÓN</button>
+        </a>
       </div>
     </div>
   </div>
@@ -189,9 +222,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="nav-mobile-margin-top"></div>
 <nav class="nav-mobile" id="mobile-menu">
   <div class="row-1">
-    <a href="index.html" >
+    <a href="/inversiones/index.html" >
       <div class="logo-nav">
-        <img src="../assets/images/Logo.png" height="45" alt="SURA" />
+        <img src="/inversiones/assets/images/Logo.png" height="45" alt="SURA" />
       </div>
     </a>
     <div class="button-nav" data-toggle="collapse" data-target="#menuMobile" aria-expanded="false" aria-controls="menuMobile">
@@ -221,7 +254,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <span>Fondos Inteligentes</span>
               <p>Una manera fácil, simple y rápida de invertir en fondos de inversión.</p>
             </div>
-            <a href="fondos-inteligentes.html">
+            <a href="/inversiones/fondos-inteligentes.html">
               <div class="item-arrow">
                 <div>
                   <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
@@ -236,7 +269,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <span>Portafolios Estratégicos</span>
               <p>Un portafolios a la medida de cada perfil de inversion.</p>
             </div>
-            <a href="portafolios-estrategicos.html">
+            <a href="/inversiones/portafolios-estrategicos.html">
               <div class="item-arrow">
                 <div>
                   <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
@@ -270,7 +303,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <a href="#">Simulador</a>
       </div>
       <div class="item-nav">
-        <a href="biblioteca-interactiva/index.html" class="font-weight-bold">Biblioteca Interactiva</a>
+        <a href="/inversiones/biblioteca-interactiva/index.html" class="font-weight-bold">Biblioteca Interactiva</a>
       </div>
       <div class="item-nav">
         <a href="#">FAQ's</a>
@@ -292,7 +325,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <ul>
               <a href="#"><li>Conoce SURA México</li></a>
               <a href="#"><li>Investment Management México</li></a>
-              <a href="#"><li>Inversiones SURA México</li></a>
+              <a href="#"><li>Afore SURA México</li></a>
               <a href="#"><li>Seguros SURA México</li></a>
               <a href="#"><li>SURA Asset Management Corporativo</li></a>
               <a href="#"><li>Fundación SURA</li></a>
@@ -303,7 +336,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div class="item-nav">
         <a href="#">
-          <img src="../assets/images/flags/mx.svg" height="20" class="mr-2" />
+          <img src="/inversiones/assets/images/flags/mx.svg" height="20" class="mr-2" />
           México
         </a>
       </div>
@@ -389,11 +422,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- <a href=""><p>Conferencias en Línea</p></a> -->
     </div>
     <div class="menu-mobile-right">
-        <a href="glosario.html"><div><div class="item"><img src="../assets/images/Glosario.jpg" alt="Glosario SURA"><span>Glosario</span></div></div></a>
-        <a href="index.html"><div><div class="item"><img src="../assets/images/Blog.jpg" alt="Blog SURA"><span>Blog</span></div></div></a>
-        <a href="podcast.html"><div><div class="item"><img src="../assets/images/Podcast.jpg" alt="Podcast SURA"><span>Podcast</span></div></div></a>
-        <a href="infografias.html"><div><div class="item"><img src="../assets/images/Infografias.jpg" alt="Infografias SURA"><span>Infografías</span></div></div></a>
-        <a href="videos.html"><div><div class="item"><img src="../assets/images/Video.jpg" alt="Videos SURA"><span>Videos</span></div></div></a>
+        <a href="glosario.html"><div><div class="item"><img src="/inversiones/assets/images/Glosario.jpg" alt="Glosario SURA"><span>Glosario</span></div></div></a>
+        <a href="index.html"><div><div class="item"><img src="/inversiones/assets/images/Blog.jpg" alt="Blog SURA"><span>Blog</span></div></div></a>
+        <a href="podcast.html"><div><div class="item"><img src="/inversiones/assets/images/Podcast.jpg" alt="Podcast SURA"><span>Podcast</span></div></div></a>
+        <a href="infografias.html"><div><div class="item"><img src="/inversiones/assets/images/Infografias.jpg" alt="Infografias SURA"><span>Infografías</span></div></div></a>
+        <a href="videos.html"><div><div class="item"><img src="/inversiones/assets/images/Video.jpg" alt="Videos SURA"><span>Videos</span></div></div></a>
         <!-- <div><div class="item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Google_Drive_logo.png/768px-Google_Drive_logo.png" alt="Conferencias SURA"><span>Conferencias en Línea</span></div></div> -->
     </div>
 </div>
@@ -402,7 +435,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="principal-content infografia-content px-0">
                     <a href="infografias/infografia-ahorrar-o-invertir.html"><div class="infografia">
                         <div class="image">
-                            <img src="../assets/img/infografias/ahorrar-intertir.png" alt="Ahorrar o invertir">
+                            <img src="/inversiones/assets/img/infografias/ahorrar-intertir.png" alt="Ahorrar o invertir">
                         </div>
                         <div class="description">
                             <h4>¿Ahorrar o invertir?</h4>
@@ -411,7 +444,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div></a>
                     <a href="infografias/infografia-diferencias-entre-fondo-de-inversion-y-portafolio-de-inversion.html"><div class="infografia">
                         <div class="image">
-                            <img src="../assets/img/infografias/portafolios.png" alt="Portafolio de inversion">
+                            <img src="/inversiones/assets/img/infografias/portafolios.png" alt="Portafolio de inversion">
                         </div>
                         <div class="description">
                             <h4>¿Cuál es la diferencia entre un fondo y portafolio de inversión?</h4>
@@ -420,7 +453,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div></a>
                     <a href="infografias/infografia-que-son-las-burbujas-financieras-y-como-proteger-tu-patrimonio.html"><div class="infografia">
                         <div class="image">
-                            <img src="../assets/img/Miniatura.jpg" alt="Burbujas financieras">
+                            <img src="/inversiones/assets/img/Miniatura.jpg" alt="Burbujas financieras">
                         </div>
                         <div class="description">
                             <h4>¿Qué son las burbujas financieras?</h4>
@@ -429,7 +462,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div></a>
                     <a href="infografias/infografia-que-es-la-diversificacion.html"><div class="infografia">
                         <div class="image">
-                            <img src="../assets/img/infografias/Mundo Riesgo.png" alt="Diversificacion">
+                            <img src="/inversiones/assets/img/infografias/Mundo Riesgo.png" alt="Diversificacion">
                         </div>
                         <div class="description">
                             <h4>¿Qué es la diversificación?</h4>
@@ -438,7 +471,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div></a>
                     <a href="infografias/infografia-que-es-la-inflacion-y-como-vencerla.html"><div class="infografia">
                         <div class="image">
-                            <img src="../assets/img/Covid.png" alt="Inflacion">
+                            <img src="/inversiones/assets/img/Covid.png" alt="Inflacion">
                         </div>
                         <div class="description">
                             <h4>¿Qué es la inflación y cómo vencerla?</h4>
@@ -473,7 +506,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <label for="correo">Email</label>
                     </div>
                     <input type="hidden" name="avisoprivacidad" id="avisoprivacidad" value=true>
-                    <button type="submit" class="square-yellow btn-content mb-md-3">SUSCRIBIRME</button>
+                    <button type="submit" class="square-yellow btn-content mb-md-3">Suscribirme</button>
                 </form>
                 <div class="privacidad">
                     <span>*Al hacer clic en Suscribirme para recibir el boletín a mi correo electrónico acepto la <a href="https://invierteyahorra.suramexico.com/suramexico/aviso-de-privacidad-SIMM.html" target="_blank" rel="nofollow">Política de Privacidad</a> del sitio.</span>
@@ -481,10 +514,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
             <div class="col-12 col-lg-3 mt-sm-5">
                 <div class="d-flex justify-content-around align-items-center">
-                    <a href="https://facebook.com/InversionesSURAMX" target="_blank" rel="nofollow"><img src="../assets/images/Icon-Facebook.svg" alt="Facebook" height="35"></a>
-                    <a href="https://twitter.com/InversionSURAMX" target="_blank" rel="nofollow"><img src="../assets/images/Icon-Twitter.svg" alt="Twitter" height="35"></a>
-                    <a href="https://youtube.com/channel/UC9efrXRjvSLiUaL3qeXaCSw" target="_blank" rel="nofollow"><img src="../assets/images/Icon-Youtube.svg" alt="Youtube" height="30"></a>
-                    <a href="https://instagram.com/inversionessuramx" target="_blank" rel="nofollow"><img src="../assets/images/Icon-Instagram.svg" alt="Instagram" height="30"></a>
+                    <a href="https://facebook.com/InversionesSURAMX" target="_blank" rel="nofollow"><img src="/inversiones/assets/images/Icon-Facebook.svg" alt="Facebook" height="35"></a>
+                    <a href="https://twitter.com/InversionSURAMX" target="_blank" rel="nofollow"><img src="/inversiones/assets/images/Icon-Twitter.svg" alt="Twitter" height="35"></a>
+                    <a href="https://youtube.com/channel/UC9efrXRjvSLiUaL3qeXaCSw" target="_blank" rel="nofollow"><img src="/inversiones/assets/images/Icon-Youtube.svg" alt="Youtube" height="30"></a>
+                    <a href="https://instagram.com/inversionessuramx" target="_blank" rel="nofollow"><img src="/inversiones/assets/images/Icon-Instagram.svg" alt="Instagram" height="30"></a>
                 </div>
             </div>
         </div>
@@ -550,7 +583,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="col-12 col-md-6 col-lg-2">
             <h5>Instagram Post</h5>
-            <img src="../assets/images/instagram.png" alt="Instragram RSS">
+            <img src="/inversiones/assets/images/instagram.png" alt="Instragram RSS">
             <br>
             <h5>Ver más 
                 <svg width="1em" height="1em" style="margin-left: 0.5rem;" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#B7B09C" xmlns="http://www.w3.org/2000/svg">
@@ -586,7 +619,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
-  <script src="../src/js/vendor.min.js"></script>
+    <script src="/inversiones/src/js/vendor.min.js"></script>
     <script>
     $(".infografia-content").slick({
     arrows: false,
