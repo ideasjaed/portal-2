@@ -47,12 +47,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
-    <link rel="preload" as="style" href="/inversiones/src/css/vendor.min.css">
-<link rel="preload" as="font" href="/inversiones/src/css/fonts/slick.ttf" type="font/ttf">
-<link rel="preload" as="font" href="/inversiones/src/css/fonts/slick.woff" type="font/woff">
-<link rel="preload" as="font" href="/inversiones/assets/fonts/FsJoey/FSJoeyWeb-Regular.woff" type="font/woff" crossorigin="anonymous">
-<link rel="preload" as="font" href="/inversiones/assets/fonts/Barlow/Barlow-Regular.ttf" type="font/ttf" crossorigin="anonymous">
-    <link href="/inversiones/src/css/vendor.min.css" rel="stylesheet">
+    <link rel="preload" as="style" href="./src/css/vendor.min.css">
+<link rel="preload" as="font" href="./src/css/fonts/slick.ttf" type="font/ttf">
+<link rel="preload" as="font" href="./src/css/fonts/slick.woff" type="font/woff">
+<link rel="preload" as="font" href="./assets/fonts/FsJoey/FSJoeyWeb-Regular.woff" type="font/woff" crossorigin="anonymous">
+<link rel="preload" as="font" href="./assets/fonts/Barlow/Barlow-Regular.ttf" type="font/ttf" crossorigin="anonymous">
+    <link href="./src/css/vendor.min.css" rel="stylesheet">
     <script type="module">
   import {Workbox} from 'https://storage.googleapis.com/workbox-cdn/releases/6.0.2/workbox-window.prod.mjs';
   // Check that service workers are supported
@@ -60,10 +60,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     // // Use the window load event to keep the page load performant
     // window.addEventListener('load', () => {
-    //   navigator.serviceWorker.register('/inversiones/sw.js');
+    //   navigator.serviceWorker.register('./sw.js');
     // });
 
-    const wb = new Workbox('/inversiones/sw.js');
+    const wb = new Workbox('./sw.js');
  
     wb.addEventListener('installed', event => {
       if (event.isUpdate) {
@@ -83,7 +83,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   }
 </script>
 <meta name="theme-color" content="#2196F3">
-<link rel="manifest" href="/inversiones/manifest.json">
+<link rel="manifest" href="./manifest.json">
 
 </head>
 
@@ -129,22 +129,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </a>
       </div>
       <div class="item-nav dropdown">
-        <a href="./inversiones/llamanos.html" class="nav-link dropdown-toggle" data-toggle="dropdown">
+        <a href="../llamanos.html" class="nav-link dropdown-toggle" data-toggle="dropdown">
           CONTÁCTANOS
         </a>
       </div>
       <div class="item-nav dropdown">
-        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><img src="/inversiones/assets/images/flags/mx.svg" height="20" class="mr-2" />
+        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><img src="./assets/images/flags/mx.svg" height="20" class="mr-2" />
           MÉXICO
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
           </svg>
         </a>
         <div class="dropdown-menu">
-          <a href="#" class="dropdown-item"><img src="/inversiones/assets/images/flags/co.svg" height="10" class="mr-2" />Colombia</a>
-          <a href="#" class="dropdown-item"><img src="/inversiones/assets/images/flags/br.svg" height="10" class="mr-2" />Brasil</a>
-          <a href="#" class="dropdown-item"><img src="/inversiones/assets/images/flags/ar.svg" height="10" class="mr-2" />Argentina</a>
-          <a href="#" class="dropdown-item"><img src="/inversiones/assets/images/flags/pe.svg" height="10" class="mr-2" />Perú</a>
+          <a href="#" class="dropdown-item"><img src="./assets/images/flags/co.svg" height="10" class="mr-2" />Colombia</a>
+          <a href="#" class="dropdown-item"><img src="./assets/images/flags/br.svg" height="10" class="mr-2" />Brasil</a>
+          <a href="#" class="dropdown-item"><img src="./assets/images/flags/ar.svg" height="10" class="mr-2" />Argentina</a>
+          <a href="#" class="dropdown-item"><img src="./assets/images/flags/pe.svg" height="10" class="mr-2" />Perú</a>
         </div>
       </div>
     </div>
@@ -152,9 +152,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </nav>
 <nav class="nav-desktop sticky-top">  
   <div class="row-2">
-    <a href="/inversiones/index.html" class="logo-nav">
+    <a href="./index.html" class="logo-nav">
       <div>
-        <img src="/inversiones/assets/images/logotipo.png" height="45" alt="SURA" />
+        <img src="./assets/images/logotipo.png" height="45" alt="SURA" />
       </div>
     </a>
     <div class="items-nav">
@@ -168,37 +168,37 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="row principal">
               <div class="submenu col-md-6">
                 <h6 class="dropdown-header">Productos</h6><hr class="rayita">
-                <a href="/inversiones/fondos-inteligentes.html" class="dropdown-item">Fondos Inteligentes</a>
-                <a href="/inversiones/portafolios-estrategicos.html" class="dropdown-item">Portafolios Estratégicos</a>
+                <a href="./fondos-inteligentes.html" class="dropdown-item">Fondos Inteligentes</a>
+                <a href="./portafolios-estrategicos.html" class="dropdown-item">Portafolios Estratégicos</a>
                 <a href="https://inversiones.suramexico.com/inversiones/invertir-con-sura/index.html" target="_blank" class="dropdown-item">Inversión digital</a>
                 <a href="#" class="dropdown-item">Otros productos</a><br>
                 <h6 class="dropdown-header">Inversiones SURA</h6><hr class="rayita">
-                <a href="/inversiones/por-que-sura.html" class="dropdown-item">¿Quiénes somos?</a>
-                <a href="/inversiones/guia-de-inversion.html" class="dropdown-item">Guía de inversión</a>
+                <a href="./por-que-sura.html" class="dropdown-item">¿Quiénes somos?</a>
+                <a href="./guia-de-inversion.html" class="dropdown-item">Guía de inversión</a>
               </div>
               <div class="submenu col-md-6">
                 <h6 class="dropdown-header">Herramientas para invertir</h6><hr class="rayita">
                 <a href="http://lt.morningstar.com/qe5lcmkfgl/screener/a/default.aspx#search/tab=asset_info0/universeIds=FOMEX$$ALL_3080/pageSize=100/page=1/sortOrder=customcategoryid%20Asc" target="_blank" class="dropdown-item">Buscador de fondos</a>
                 <a href="https://www.suraim.com.mx/FondosInversion/Rendimientos" target="_blank" class="dropdown-item">Rendimientos</a>
-                <a href="/inversiones/simulador-de-inversion.html" class="dropdown-item">Simulador de inversión</a><br>
+                <a href="./simulador-de-inversion.html" class="dropdown-item">Simulador de inversión</a><br>
                 <h6 class="dropdown-header">Conoce</h6><hr class="rayita">
-                <a href="/inversiones/avisos-importantes.html" class="dropdown-item">Avisos importantes</a>
-                <a href="/inversiones/portafolios-estrategicos.html" class="dropdown-item">Inversión con beneficio fiscal</a>
+                <a href="./avisos-importantes.html" class="dropdown-item">Avisos importantes</a>
+                <a href="./portafolios-estrategicos.html" class="dropdown-item">Inversión con beneficio fiscal</a>
               </div>
           </div>  
         </div>
       </div>
       <div class="item-nav">
-        <a href="/inversiones/perfil-inversionista.html">Mi perfil de inversionista</a>
+        <a href="./perfil-inversionista.html">Mi perfil de inversionista</a>
       </div>
       <!-- <div class="item-nav">
         <a href="#" class="font-weight-bold">Simulador de inversión</a>
       </div> -->
       <div class="item-nav">
-        <a href="/inversiones/biblioteca-interactiva/index.html">Biblioteca interactiva</a>
+        <a href="./biblioteca-interactiva/index.html">Biblioteca interactiva</a>
       </div>
       <!-- <div class="item-nav">
-        <a href="/inversiones/preguntas-frecuentes.html">FAQ's</a>
+        <a href="./preguntas-frecuentes.html">FAQ's</a>
       </div> -->
       <div class="item-nav dropdown">
         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><strong>Quiero invertir</strong>
@@ -207,7 +207,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </svg>
         </a>
         <div class="dropdown-menu">
-              <a href="/inversiones/llamanos.html" target="_blank" class="dropdown-item">Contactar a un asesor</a>
+              <a href="./llamanos.html" target="_blank" class="dropdown-item">Contactar a un asesor</a>
               <a href="https://inversiones.suramexico.com/inversiones/invertir-con-sura/index.html" class="dropdown-item">Hacerlo de forma digital</a>
         </div>
       </div>
@@ -222,9 +222,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="nav-mobile-margin-top"></div>
 <nav class="nav-mobile" id="mobile-menu">
   <div class="row-1">
-    <a href="/inversiones/index.html" >
+    <a href="./index.html" >
       <div class="logo-nav">
-        <img src="/inversiones/assets/images/Logo.png" height="45" alt="SURA" />
+        <img src="./assets/images/Logo.png" height="45" alt="SURA" />
       </div>
     </a>
     <div class="button-nav" data-toggle="collapse" data-target="#menuMobile" aria-expanded="false" aria-controls="menuMobile">
@@ -254,7 +254,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <span>Fondos Inteligentes</span>
               <p>Una manera fácil, simple y rápida de invertir en fondos de inversión.</p>
             </div>
-            <a href="/inversiones/fondos-inteligentes.html">
+            <a href="./fondos-inteligentes.html">
               <div class="item-arrow">
                 <div>
                   <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
@@ -269,7 +269,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <span>Portafolios Estratégicos</span>
               <p>Un portafolios a la medida de cada perfil de inversion.</p>
             </div>
-            <a href="/inversiones/portafolios-estrategicos.html">
+            <a href="./portafolios-estrategicos.html">
               <div class="item-arrow">
                 <div>
                   <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
@@ -303,7 +303,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <a href="#">Simulador</a>
       </div>
       <div class="item-nav">
-        <a href="/inversiones/biblioteca-interactiva/index.html" class="font-weight-bold">Biblioteca Interactiva</a>
+        <a href="./biblioteca-interactiva/index.html" class="font-weight-bold">Biblioteca Interactiva</a>
       </div>
       <div class="item-nav">
         <a href="#">FAQ's</a>
@@ -336,7 +336,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div class="item-nav">
         <a href="#">
-          <img src="/inversiones/assets/images/flags/mx.svg" height="20" class="mr-2" />
+          <img src="./assets/images/flags/mx.svg" height="20" class="mr-2" />
           México
         </a>
       </div>
@@ -370,51 +370,51 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="col-lg-5">
                         <div class="nav flex-column nav-pills familiaComplemento__navPills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                             <a class="nav-link active barlow-bold" id="surbono-tab" data-toggle="pill" href="#surbono" role="tab" aria-controls="surbono" aria-selected="true">
-                                <img src="/inversiones/inversiones/assets/images/Infografias.jpg" alt="">
+                                <img src="../assets/images/Infografias.jpg" alt="">
                                 <span>Fondo SURA Deuda Tasa Nominal Largo Plazo (SURBONO)</span>
                             </a>
                             <a class="nav-link barlow-bold" id="suridi-tab" data-toggle="pill" href="#suridi" role="tab" aria-controls="suridi" aria-selected="false">
-                                <img src="/inversiones/inversiones/assets/images/Infografias.jpg" alt="">
+                                <img src="../assets/images/Infografias.jpg" alt="">
                                 <span>Fondo SURA Deuda Tasa Real Mediano Plazo (SURUDI)</span>
                             </a>
                             <a class="nav-link barlow-bold" id="surpat-tab" data-toggle="pill" href="#surpat" role="tab" aria-controls="surpat" aria-selected="false">
-                                <img src="/inversiones/inversiones/assets/images/Infografias.jpg" alt="">
+                                <img src="../assets/images/Infografias.jpg" alt="">
                                 <span>Fondo SURA Renta Variable Alta Bursatilidad (SURPAT)</span>
                             </a>
                             <a class="nav-link barlow-bold" id="surcorp-tab" data-toggle="pill" href="#surcorp" role="tab" aria-controls="surcorp" aria-selected="false">
-                                <img src="/inversiones/inversiones/assets/images/Infografias.jpg" alt="">
+                                <img src="../assets/images/Infografias.jpg" alt="">
                                 <span>Fondo SURA Deuda Corporativa (SURCORP)</span>
                             </a>
                             <a class="nav-link barlow-bold" id="surusd-tab" data-toggle="pill" href="#surusd" role="tab" aria-controls="surusd" aria-selected="false">
-                                <img src="/inversiones/inversiones/assets/images/Infografias.jpg" alt="">
+                                <img src="../assets/images/Infografias.jpg" alt="">
                                 <span>Fondo SURA Deuda Dólares (SURUSD)</span>
                             </a>
                             <a class="nav-link barlow-bold" id="surrv-tab" data-toggle="pill" href="#surrv" role="tab" aria-controls="surrv" aria-selected="false">
-                                <img src="/inversiones/inversiones/assets/images/Infografias.jpg" alt="">
+                                <img src="../assets/images/Infografias.jpg" alt="">
                                 <span>Fondo SURA Renta Variable Global ETFs (SUR-RV)</span>
                             </a>
                             <a class="nav-link barlow-bold" id="surreal-tab" data-toggle="pill" href="#surreal" role="tab" aria-controls="surreal" aria-selected="false">
-                                <img src="/inversiones/inversiones/assets/images/Infografias.jpg" alt="">
+                                <img src="../assets/images/Infografias.jpg" alt="">
                                 <span>Fondo SURA Deuda Tasa Real Largo Plazo (SURREAL)</span>
                             </a>
                             <a class="nav-link barlow-bold" id="suripc-tab" data-toggle="pill" href="#suripc" role="tab" aria-controls="suripc" aria-selected="false">
-                                <img src="/inversiones/inversiones/assets/images/Infografias.jpg" alt="">
+                                <img src="../assets/images/Infografias.jpg" alt="">
                                 <span>Fondo SURA Renta Variable Nacional (SURIPC)</span>
                             </a>
                             <a class="nav-link barlow-bold" id="surasia-tab" data-toggle="pill" href="#surasia" role="tab" aria-controls="surasia" aria-selected="false">
-                                <img src="/inversiones/inversiones/assets/images/Infografias.jpg" alt="">
+                                <img src="../assets/images/Infografias.jpg" alt="">
                                 <span>Fondo SURA Renta Variable Asia (SURASIA)</span>
                             </a>
                             <a class="nav-link barlow-bold" id="surreal2-tab" data-toggle="pill" href="surreal2" role="tab" aria-controls="surreal2" aria-selected="false">
-                                <img src="/inversiones/inversiones/assets/images/Infografias.jpg" alt="">
+                                <img src="../assets/images/Infografias.jpg" alt="">
                                 <span>Fondo SURA Deuda Tasa Real Largo Plazo (SURREAL)</span>
                             </a>
                             <a class="nav-link barlow-bold" id="suripic2-tab" data-toggle="pill" href="#suripic2" role="tab" aria-controls="suripic2" aria-selected="false">
-                                <img src="/inversiones/inversiones/assets/images/Infografias.jpg" alt="">
+                                <img src="../assets/images/Infografias.jpg" alt="">
                                 <span>Fondo SURA Renta Variable Nacional (SURIPC)</span>
                             </a>
                             <a class="nav-link barlow-bold" id="suriasi2-tab" data-toggle="pill" href="#suriasia2" role="tab" aria-controls="suriasia2" aria-selected="false">
-                                <img src="/inversiones/inversiones/assets/images/Infografias.jpg" alt="">
+                                <img src="../assets/images/Infografias.jpg" alt="">
                                 <span>Fondo SURA Renta Variable Asia (SURASIA)</span>
                             </a>
                         </div>
@@ -424,14 +424,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <div class="cars tab-pane fade show active" id="surbono" role="tabpanel" aria-labelledby="surbono-tab">
                                 <div class="">
                                     <div class="header-cars" role="tab">
-                                        <h5><a id="coll-surbono" href="#collapse-surbono" data-toggle="collapse" data-parent="" aria-expanded="true" aria-controls="collapse-surbono">Fondo SURA Deuda Tasa Nominal Largo Plazo (SURBONO) <span> <img src="/inversiones/inversiones/assets/images/arrow-right.png" alt=""> </span></a></h5>
+                                        <h5><a id="coll-surbono" href="#collapse-surbono" data-toggle="collapse" data-parent="" aria-expanded="true" aria-controls="collapse-surbono">Fondo SURA Deuda Tasa Nominal Largo Plazo (SURBONO) <span> <img src="../assets/images/arrow-right.png" alt=""> </span></a></h5>
                                     </div>
                                     <div class="content-collapse-surbono collapse content-cars " id="collapse-surbono">
                                         <h4>Fondo SURA Deuda Tasa Real Mediano Plazo</h4>
                                         <h4>(SURBONO)</h4>
                                         <div class="row mt-5">
                                             <div class="col-lg-4">
-                                                <img class="image-pill-content" src="/inversiones/inversiones/assets/images/porqueSura/union.png" alt="">
+                                                <img class="image-pill-content" src="../assets/images/porqueSura/union.png" alt="">
                                             </div>
                                             <div class="col-lg-8">
                                                 <p>Fondo de inversión de deuda a largo plazo que invierte, preponderantemente, en valores emitidos y/o avalados por el Gobierno Federal con vencimiento mayor a un año, emitidos a tasa fija en pesos y/o UDIS, complementándose con valores bancarios y valores corporativos.</p>
@@ -451,7 +451,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <div class="cars tab-pane fade show" id="suridi" role="tabpanel" aria-labelledby="suridi-tab">
                                 <div class="">
                                     <div class="header-cars" role="tab">
-                                        <h5><a href="#collapse-suridi" data-toggle="collapse" data-parent="" aria-expanded="true" aria-controls="collapse-suridi">Fondo Sura Deuda Tasa Nominal Largo Plazo (SURUDI) <span> <img src="/inversiones/inversiones/assets/images/arrow-right.png" alt=""> </span></a></h5>
+                                        <h5><a href="#collapse-suridi" data-toggle="collapse" data-parent="" aria-expanded="true" aria-controls="collapse-suridi">Fondo Sura Deuda Tasa Nominal Largo Plazo (SURUDI) <span> <img src="../assets/images/arrow-right.png" alt=""> </span></a></h5>
                                     </div>
                                     <div class="collapse content-collapse-suridi content-cars" id="collapse-suridi">
                                         <h4>Fondo Sura Deuda Tasa Nominal Largo Plazo</h4>
@@ -462,7 +462,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <div class="cars tab-pane fade" id="surpat" role="tabpanel" aria-labelledby="surpat-tab">
                                 <div class="">
                                     <div class="header-cars" role="tab">
-                                        <h5><a href="#collapse-surpat" data-toggle="collapse" data-parent="" aria-expanded="true" aria-controls="collapse-surpat">Fondo Sura Deuda Tasa Nominal Largo Plazo (SURUDI) <span> <img src="/inversiones/inversiones/assets/images/arrow-right.png" alt=""> </span></a></h5>
+                                        <h5><a href="#collapse-surpat" data-toggle="collapse" data-parent="" aria-expanded="true" aria-controls="collapse-surpat">Fondo Sura Deuda Tasa Nominal Largo Plazo (SURUDI) <span> <img src="../assets/images/arrow-right.png" alt=""> </span></a></h5>
                                     </div>
                                     <div class="collapse content-collapse-surpat content-cars" id="collapse-surpat">
                                         <h4>Fondo Sura Deuda Tasa Nominal Largo Plazo</h4>
@@ -474,7 +474,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <div class=" tab-pane fade" id="surcorp" role="tabpanel" aria-labelledby="surcorp-tab">
                                 <div class="cars">
                                     <div class="header-cars" role="tab">
-                                        <h5><a href="#collapse-surcorp" data-toggle="collapse" data-parent="" aria-expanded="false" aria-controls="collapse-surcorp">Fondo Sura Deuda Tasa Nominal Largo Plazo (SURUDI) <span> <img src="/inversiones/inversiones/assets/images/arrow-right.png" alt=""> </span></a></h5>
+                                        <h5><a href="#collapse-surcorp" data-toggle="collapse" data-parent="" aria-expanded="false" aria-controls="collapse-surcorp">Fondo Sura Deuda Tasa Nominal Largo Plazo (SURUDI) <span> <img src="../assets/images/arrow-right.png" alt=""> </span></a></h5>
                                     </div>
                                     <div class="collapse content-collapse-surcorp content-cars" id="collapse-surcorp">
                                         <h4>Fondo Sura Deuda Tasa Nominal Largo Plazo</h4>
@@ -485,7 +485,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <div class="tab-pane fade" id="surusd" role="tabpanel" aria-labelledby="surusd-tab">
                                 <div class="cars">
                                     <div class="header-cars" role="tab">
-                                        <h5><a href="#collapse-surusd" data-toggle="collapse" data-parent="" aria-expanded="false" aria-controls="collapse-surusd">Fondo Sura Deuda Tasa Nominal Largo Plazo (SURUDI) <span> <img src="/inversiones/inversiones/assets/images/arrow-right.png" alt=""> </span></a></h5>
+                                        <h5><a href="#collapse-surusd" data-toggle="collapse" data-parent="" aria-expanded="false" aria-controls="collapse-surusd">Fondo Sura Deuda Tasa Nominal Largo Plazo (SURUDI) <span> <img src="../assets/images/arrow-right.png" alt=""> </span></a></h5>
                                     </div>
                                     <div class="collapse content-collapse-surusd content-cars" id="collapse-surusd">
                                         <h4>Fondo Sura Deuda Tasa Nominal Largo Plazo</h4>
@@ -496,7 +496,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <div class="tab-pane fade" id="surrv" role="tabpanel" aria-labelledby="surrv-tab">
                                 <div class="cars">
                                     <div class="header-cars" role="tab">
-                                        <h5><a href="#collapse-surrv" data-toggle="collapse" data-parent="" aria-expanded="false" aria-controls="collapse-surrv">Fondo Sura Deuda Tasa Nominal Largo Plazo (SURUDI) <span> <img src="/inversiones/inversiones/assets/images/arrow-right.png" alt=""> </span></a></h5>
+                                        <h5><a href="#collapse-surrv" data-toggle="collapse" data-parent="" aria-expanded="false" aria-controls="collapse-surrv">Fondo Sura Deuda Tasa Nominal Largo Plazo (SURUDI) <span> <img src="../assets/images/arrow-right.png" alt=""> </span></a></h5>
                                     </div>
                                     <div class="collapse content-collapse-surrv content-cars" id="collapse-surrv">
                                         <h4>Fondo Sura Deuda Tasa Nominal Largo Plazo</h4>
@@ -507,7 +507,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <div class="tab-pane fade" id="surreal" role="tabpanel" aria-labelledby="surreal-tab">
                                 <div class="cars">
                                     <div class="header-cars" role="tab">
-                                        <h5><a href="#collapse-surreal" data-toggle="collapse" data-parent="" aria-expanded="false" aria-controls="collapse-surreal">Fondo Sura Deuda Tasa Nominal Largo Plazo (SURUDI) <span> <img src="/inversiones/inversiones/assets/images/arrow-right.png" alt=""> </span></a></h5>
+                                        <h5><a href="#collapse-surreal" data-toggle="collapse" data-parent="" aria-expanded="false" aria-controls="collapse-surreal">Fondo Sura Deuda Tasa Nominal Largo Plazo (SURUDI) <span> <img src="../assets/images/arrow-right.png" alt=""> </span></a></h5>
                                     </div>
                                     <div class="collapse content-collapse-surreal content-cars" id="collapse-surreal">
                                         <h4>Fondo Sura Deuda Tasa Nominal Largo Plazo</h4>
@@ -518,7 +518,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <div class="tab-pane fade" id="suripc" role="tabpanel" aria-labelledby="suripc-tab">
                                 <div class="cars">
                                     <div class="header-cars" role="tab">
-                                        <h5><a href="#collapse-suripc" data-toggle="collapse" data-parent="" aria-expanded="false" aria-controls="collapse-suripc">Fondo Sura Deuda Tasa Nominal Largo Plazo (SURUDI) <span> <img src="/inversiones/inversiones/assets/images/arrow-right.png" alt=""> </span></a></h5>
+                                        <h5><a href="#collapse-suripc" data-toggle="collapse" data-parent="" aria-expanded="false" aria-controls="collapse-suripc">Fondo Sura Deuda Tasa Nominal Largo Plazo (SURUDI) <span> <img src="../assets/images/arrow-right.png" alt=""> </span></a></h5>
                                     </div>
                                     <div class="collapse content-collapse-suripc content-cars" id="collapse-suripc">
                                         <h4>Fondo Sura Deuda Tasa Nominal Largo Plazo</h4>
@@ -529,7 +529,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <div class="tab-pane fade" id="surasia" role="tabpanel" aria-labelledby="surasia-tab">
                                 <div class="cars">
                                     <div class="header-cars" role="tab">
-                                        <h5><a href="#collapse-surasia" data-toggle="collapse" data-parent="" aria-expanded="false" aria-controls="collapse-surasia">Fondo Sura Deuda Tasa Nominal Largo Plazo (SURUDI) <span> <img src="/inversiones/inversiones/assets/images/arrow-right.png" alt=""> </span></a></h5>
+                                        <h5><a href="#collapse-surasia" data-toggle="collapse" data-parent="" aria-expanded="false" aria-controls="collapse-surasia">Fondo Sura Deuda Tasa Nominal Largo Plazo (SURUDI) <span> <img src="../assets/images/arrow-right.png" alt=""> </span></a></h5>
                                     </div>
                                     <div class="collapse content-collapse-surasia content-cars" id="collapse-surasia">
                                         <h4>Fondo Sura Deuda Tasa Nominal Largo Plazo</h4>
@@ -540,7 +540,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <div class="tab-pane fade" id="surreal2" role="tabpanel" aria-labelledby="surreal2-tab">
                                 <div class="cars">
                                     <div class="header-cars" role="tab">
-                                        <h5><a href="#collapse-surreal2" data-toggle="collapse" data-parent="" aria-expanded="false" aria-controls="collapse-surreal2">Fondo Sura Deuda Tasa Nominal Largo Plazo (SURUDI) <span> <img src="/inversiones/inversiones/assets/images/arrow-right.png" alt=""> </span></a></h5>
+                                        <h5><a href="#collapse-surreal2" data-toggle="collapse" data-parent="" aria-expanded="false" aria-controls="collapse-surreal2">Fondo Sura Deuda Tasa Nominal Largo Plazo (SURUDI) <span> <img src="../assets/images/arrow-right.png" alt=""> </span></a></h5>
                                     </div>
                                     <div class="collapse content-collapse-surreal2 content-cars" id="collapse-surreal2">
                                         <h4>Fondo Sura Deuda Tasa Nominal Largo Plazo</h4>
@@ -551,7 +551,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <div class="tab-pane fade" id="suripic2" role="tabpanel" aria-labelledby="suripic2-tab">
                                 <div class="cars">
                                     <div class="header-cars" role="tab">
-                                        <h5><a href="#collapse-suripic2" data-toggle="collapse" data-parent="" aria-expanded="false" aria-controls="collapse-suripic2">Fondo Sura Deuda Tasa Nominal Largo Plazo (SURUDI) <span> <img src="/inversiones/inversiones/assets/images/arrow-right.png" alt=""> </span></a></h5>
+                                        <h5><a href="#collapse-suripic2" data-toggle="collapse" data-parent="" aria-expanded="false" aria-controls="collapse-suripic2">Fondo Sura Deuda Tasa Nominal Largo Plazo (SURUDI) <span> <img src="../assets/images/arrow-right.png" alt=""> </span></a></h5>
                                     </div>
                                     <div class="collapse content-collapse-suripic2 content-cars" id="collapse-suripic2">
                                         <h4>Fondo Sura Deuda Tasa Nominal Largo Plazo</h4>
@@ -562,7 +562,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <div class="tab-pane fade" id="suriasia2" role="tabpanel" aria-labelledby="suriasia2-tab">
                                 <div class="cars">
                                     <div class="header-cars" role="tab">
-                                        <h5><a href="#collapse-suriasia2" data-toggle="collapse" data-parent="" aria-expanded="false" aria-controls="collapse-suriasia2">Fondo Sura Deuda Tasa Nominal Largo Plazo (SURUDI) <span> <img src="/inversiones/inversiones/assets/images/arrow-right.png" alt=""> </span></a></h5>
+                                        <h5><a href="#collapse-suriasia2" data-toggle="collapse" data-parent="" aria-expanded="false" aria-controls="collapse-suriasia2">Fondo Sura Deuda Tasa Nominal Largo Plazo (SURUDI) <span> <img src="../assets/images/arrow-right.png" alt=""> </span></a></h5>
                                     </div>
                                     <div class="collapse content-collapse-suriasia2 content-cars" id="collapse-suriasia2">
                                         <h4>Fondo Sura Deuda Tasa Nominal Largo Plazo</h4>
@@ -577,7 +577,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="section-image-button bg-darken-all mt-5">
             <div class="image-div">
-                <img src="/inversiones/assets/images/portal/bannerHorizonte.png" alt="Comienza invertir">
+                <img src="./assets/images/portal/bannerHorizonte.png" alt="Comienza invertir">
             </div>
             <div class="description bg-darken-all">
                 <div class="desc-cont">
@@ -602,7 +602,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div>
                 <div class="section-carousel-item">
                     <div class="carousel-image">
-                        <img src="/inversiones/assets/images/global/carousel.png" alt="Inversion largo plazo">
+                        <img src="./assets/images/global/carousel.png" alt="Inversion largo plazo">
                     </div>
                     <div class="carousel-p">
                         <p>Inversión a largo plazo: Recomendación ante la crisis del COVID-19.</p>
@@ -612,7 +612,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div>
                 <div class="section-carousel-item">
                     <div class="carousel-image">
-                        <img src="/inversiones/assets/images/global/carousel.png" alt="Inversion largo plazo">
+                        <img src="./assets/images/global/carousel.png" alt="Inversion largo plazo">
                     </div>
                     <div class="carousel-p">
                         <p>5 errores y recomendaciones en inversiones para proteger tu patrimonio.</p>
@@ -656,10 +656,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
             <div class="col-12 col-lg-3 mt-sm-5">
                 <div class="d-flex justify-content-around align-items-center">
-                    <a href="https://facebook.com/InversionesSURAMX" target="_blank" rel="nofollow"><img src="/inversiones/assets/images/Icon-Facebook.svg" alt="Facebook" height="35"></a>
-                    <a href="https://twitter.com/InversionSURAMX" target="_blank" rel="nofollow"><img src="/inversiones/assets/images/Icon-Twitter.svg" alt="Twitter" height="35"></a>
-                    <a href="https://youtube.com/channel/UC9efrXRjvSLiUaL3qeXaCSw" target="_blank" rel="nofollow"><img src="/inversiones/assets/images/Icon-Youtube.svg" alt="Youtube" height="30"></a>
-                    <a href="https://instagram.com/inversionessuramx" target="_blank" rel="nofollow"><img src="/inversiones/assets/images/Icon-Instagram.svg" alt="Instagram" height="30"></a>
+                    <a href="https://facebook.com/InversionesSURAMX" target="_blank" rel="nofollow"><img src="./assets/images/Icon-Facebook.svg" alt="Facebook" height="35"></a>
+                    <a href="https://twitter.com/InversionSURAMX" target="_blank" rel="nofollow"><img src="./assets/images/Icon-Twitter.svg" alt="Twitter" height="35"></a>
+                    <a href="https://youtube.com/channel/UC9efrXRjvSLiUaL3qeXaCSw" target="_blank" rel="nofollow"><img src="./assets/images/Icon-Youtube.svg" alt="Youtube" height="30"></a>
+                    <a href="https://instagram.com/inversionessuramx" target="_blank" rel="nofollow"><img src="./assets/images/Icon-Instagram.svg" alt="Instagram" height="30"></a>
                 </div>
             </div>
         </div>
@@ -725,7 +725,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="col-12 col-md-6 col-lg-2">
             <h5>Instagram Post</h5>
-            <img src="/inversiones/assets/images/instagram.png" alt="Instragram RSS">
+            <img src="./assets/images/instagram.png" alt="Instragram RSS">
             <br>
             <h5>Ver más 
                 <svg width="1em" height="1em" style="margin-left: 0.5rem;" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#B7B09C" xmlns="http://www.w3.org/2000/svg">
@@ -761,7 +761,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
-    <script src="/inversiones/src/js/vendor.min.js"></script>
+    <script src="./src/js/vendor.min.js"></script>
 </body>
 
 </html>

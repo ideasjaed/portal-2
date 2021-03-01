@@ -45,12 +45,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
-    <link rel="preload" as="style" href="/inversiones/src/css/vendor.min.css">
-<link rel="preload" as="font" href="/inversiones/src/css/fonts/slick.ttf" type="font/ttf">
-<link rel="preload" as="font" href="/inversiones/src/css/fonts/slick.woff" type="font/woff">
-<link rel="preload" as="font" href="/inversiones/assets/fonts/FsJoey/FSJoeyWeb-Regular.woff" type="font/woff" crossorigin="anonymous">
-<link rel="preload" as="font" href="/inversiones/assets/fonts/Barlow/Barlow-Regular.ttf" type="font/ttf" crossorigin="anonymous">
-    <link href="/inversiones/src/css/vendor.min.css" rel="stylesheet">
+    <link rel="preload" as="style" href="./src/css/vendor.min.css">
+<link rel="preload" as="font" href="./src/css/fonts/slick.ttf" type="font/ttf">
+<link rel="preload" as="font" href="./src/css/fonts/slick.woff" type="font/woff">
+<link rel="preload" as="font" href="./assets/fonts/FsJoey/FSJoeyWeb-Regular.woff" type="font/woff" crossorigin="anonymous">
+<link rel="preload" as="font" href="./assets/fonts/Barlow/Barlow-Regular.ttf" type="font/ttf" crossorigin="anonymous">
+    <link href="./src/css/vendor.min.css" rel="stylesheet">
     <script type="module">
   import {Workbox} from 'https://storage.googleapis.com/workbox-cdn/releases/6.0.2/workbox-window.prod.mjs';
   // Check that service workers are supported
@@ -58,10 +58,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     // // Use the window load event to keep the page load performant
     // window.addEventListener('load', () => {
-    //   navigator.serviceWorker.register('/inversiones/sw.js');
+    //   navigator.serviceWorker.register('./sw.js');
     // });
 
-    const wb = new Workbox('/inversiones/sw.js');
+    const wb = new Workbox('./sw.js');
  
     wb.addEventListener('installed', event => {
       if (event.isUpdate) {
@@ -81,7 +81,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   }
 </script>
 <meta name="theme-color" content="#2196F3">
-<link rel="manifest" href="/inversiones/manifest.json">
+<link rel="manifest" href="./manifest.json">
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
@@ -125,22 +125,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </a>
       </div>
       <div class="item-nav dropdown">
-        <a href="./inversiones/llamanos.html" class="nav-link dropdown-toggle" data-toggle="dropdown">
+        <a href="../llamanos.html" class="nav-link dropdown-toggle" data-toggle="dropdown">
           CONTÁCTANOS
         </a>
       </div>
       <div class="item-nav dropdown">
-        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><img src="/inversiones/assets/images/flags/mx.svg" height="20" class="mr-2" />
+        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><img src="./assets/images/flags/mx.svg" height="20" class="mr-2" />
           MÉXICO
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
           </svg>
         </a>
         <div class="dropdown-menu">
-          <a href="#" class="dropdown-item"><img src="/inversiones/assets/images/flags/co.svg" height="10" class="mr-2" />Colombia</a>
-          <a href="#" class="dropdown-item"><img src="/inversiones/assets/images/flags/br.svg" height="10" class="mr-2" />Brasil</a>
-          <a href="#" class="dropdown-item"><img src="/inversiones/assets/images/flags/ar.svg" height="10" class="mr-2" />Argentina</a>
-          <a href="#" class="dropdown-item"><img src="/inversiones/assets/images/flags/pe.svg" height="10" class="mr-2" />Perú</a>
+          <a href="#" class="dropdown-item"><img src="./assets/images/flags/co.svg" height="10" class="mr-2" />Colombia</a>
+          <a href="#" class="dropdown-item"><img src="./assets/images/flags/br.svg" height="10" class="mr-2" />Brasil</a>
+          <a href="#" class="dropdown-item"><img src="./assets/images/flags/ar.svg" height="10" class="mr-2" />Argentina</a>
+          <a href="#" class="dropdown-item"><img src="./assets/images/flags/pe.svg" height="10" class="mr-2" />Perú</a>
         </div>
       </div>
     </div>
@@ -148,9 +148,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </nav>
 <nav class="nav-desktop sticky-top">  
   <div class="row-2">
-    <a href="/inversiones/index.html" class="logo-nav">
+    <a href="./index.html" class="logo-nav">
       <div>
-        <img src="/inversiones/assets/images/logotipo.png" height="45" alt="SURA" />
+        <img src="./assets/images/logotipo.png" height="45" alt="SURA" />
       </div>
     </a>
     <div class="items-nav">
@@ -164,37 +164,37 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="row principal">
               <div class="submenu col-md-6">
                 <h6 class="dropdown-header">Productos</h6><hr class="rayita">
-                <a href="/inversiones/fondos-inteligentes.html" class="dropdown-item">Fondos Inteligentes</a>
-                <a href="/inversiones/portafolios-estrategicos.html" class="dropdown-item">Portafolios Estratégicos</a>
+                <a href="./fondos-inteligentes.html" class="dropdown-item">Fondos Inteligentes</a>
+                <a href="./portafolios-estrategicos.html" class="dropdown-item">Portafolios Estratégicos</a>
                 <a href="https://inversiones.suramexico.com/inversiones/invertir-con-sura/index.html" target="_blank" class="dropdown-item">Inversión digital</a>
                 <a href="#" class="dropdown-item">Otros productos</a><br>
                 <h6 class="dropdown-header">Inversiones SURA</h6><hr class="rayita">
-                <a href="/inversiones/por-que-sura.html" class="dropdown-item">¿Quiénes somos?</a>
-                <a href="/inversiones/guia-de-inversion.html" class="dropdown-item">Guía de inversión</a>
+                <a href="./por-que-sura.html" class="dropdown-item">¿Quiénes somos?</a>
+                <a href="./guia-de-inversion.html" class="dropdown-item">Guía de inversión</a>
               </div>
               <div class="submenu col-md-6">
                 <h6 class="dropdown-header">Herramientas para invertir</h6><hr class="rayita">
                 <a href="http://lt.morningstar.com/qe5lcmkfgl/screener/a/default.aspx#search/tab=asset_info0/universeIds=FOMEX$$ALL_3080/pageSize=100/page=1/sortOrder=customcategoryid%20Asc" target="_blank" class="dropdown-item">Buscador de fondos</a>
                 <a href="https://www.suraim.com.mx/FondosInversion/Rendimientos" target="_blank" class="dropdown-item">Rendimientos</a>
-                <a href="/inversiones/simulador-de-inversion.html" class="dropdown-item">Simulador de inversión</a><br>
+                <a href="./simulador-de-inversion.html" class="dropdown-item">Simulador de inversión</a><br>
                 <h6 class="dropdown-header">Conoce</h6><hr class="rayita">
-                <a href="/inversiones/avisos-importantes.html" class="dropdown-item">Avisos importantes</a>
-                <a href="/inversiones/portafolios-estrategicos.html" class="dropdown-item">Inversión con beneficio fiscal</a>
+                <a href="./avisos-importantes.html" class="dropdown-item">Avisos importantes</a>
+                <a href="./portafolios-estrategicos.html" class="dropdown-item">Inversión con beneficio fiscal</a>
               </div>
           </div>  
         </div>
       </div>
       <div class="item-nav">
-        <a href="/inversiones/perfil-inversionista.html">Mi perfil de inversionista</a>
+        <a href="./perfil-inversionista.html">Mi perfil de inversionista</a>
       </div>
       <!-- <div class="item-nav">
         <a href="#" class="font-weight-bold">Simulador de inversión</a>
       </div> -->
       <div class="item-nav">
-        <a href="/inversiones/biblioteca-interactiva/index.html">Biblioteca interactiva</a>
+        <a href="./biblioteca-interactiva/index.html">Biblioteca interactiva</a>
       </div>
       <!-- <div class="item-nav">
-        <a href="/inversiones/preguntas-frecuentes.html">FAQ's</a>
+        <a href="./preguntas-frecuentes.html">FAQ's</a>
       </div> -->
       <div class="item-nav dropdown">
         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><strong>Quiero invertir</strong>
@@ -203,7 +203,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </svg>
         </a>
         <div class="dropdown-menu">
-              <a href="/inversiones/llamanos.html" target="_blank" class="dropdown-item">Contactar a un asesor</a>
+              <a href="./llamanos.html" target="_blank" class="dropdown-item">Contactar a un asesor</a>
               <a href="https://inversiones.suramexico.com/inversiones/invertir-con-sura/index.html" class="dropdown-item">Hacerlo de forma digital</a>
         </div>
       </div>
@@ -218,9 +218,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="nav-mobile-margin-top"></div>
 <nav class="nav-mobile" id="mobile-menu">
   <div class="row-1">
-    <a href="/inversiones/index.html" >
+    <a href="./index.html" >
       <div class="logo-nav">
-        <img src="/inversiones/assets/images/Logo.png" height="45" alt="SURA" />
+        <img src="./assets/images/Logo.png" height="45" alt="SURA" />
       </div>
     </a>
     <div class="button-nav" data-toggle="collapse" data-target="#menuMobile" aria-expanded="false" aria-controls="menuMobile">
@@ -250,7 +250,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <span>Fondos Inteligentes</span>
               <p>Una manera fácil, simple y rápida de invertir en fondos de inversión.</p>
             </div>
-            <a href="/inversiones/fondos-inteligentes.html">
+            <a href="./fondos-inteligentes.html">
               <div class="item-arrow">
                 <div>
                   <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
@@ -265,7 +265,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <span>Portafolios Estratégicos</span>
               <p>Un portafolios a la medida de cada perfil de inversion.</p>
             </div>
-            <a href="/inversiones/portafolios-estrategicos.html">
+            <a href="./portafolios-estrategicos.html">
               <div class="item-arrow">
                 <div>
                   <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
@@ -299,7 +299,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <a href="#">Simulador</a>
       </div>
       <div class="item-nav">
-        <a href="/inversiones/biblioteca-interactiva/index.html" class="font-weight-bold">Biblioteca Interactiva</a>
+        <a href="./biblioteca-interactiva/index.html" class="font-weight-bold">Biblioteca Interactiva</a>
       </div>
       <div class="item-nav">
         <a href="#">FAQ's</a>
@@ -332,7 +332,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div class="item-nav">
         <a href="#">
-          <img src="/inversiones/assets/images/flags/mx.svg" height="20" class="mr-2" />
+          <img src="./assets/images/flags/mx.svg" height="20" class="mr-2" />
           México
         </a>
       </div>
@@ -350,7 +350,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <h1>Servicio de Gestión:</h1>
             <span class="mt-1 mb-3 perfilInversionista__line"></span>
             <div class="content-movil-sgestion">
-                <img class="d-block d-sm-block d-md-block d-lg-none" src="/inversiones/inversiones/assets/images/mac-verde.png" alt="">
+                <img class="d-block d-sm-block d-md-block d-lg-none" src="../assets/images/mac-verde.png" alt="">
                 <p class="subtitle-sgestion">Un servicio que otras instituciones ofrecen solo a grandes inversionistas</p>
                 <button class="circle-yellow btn-content">Quiero Invertir <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
@@ -364,7 +364,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="cards-button-item" onclick="cardsButton(this)">
                 <div class="image-title text-lg-left text-md-center text-sm-center text-center">
                     <div class="image-container">
-                        <img src="/inversiones/assets/images/portal/iconfoco.png" alt="Diversificados globalmente">
+                        <img src="./assets/images/portal/iconfoco.png" alt="Diversificados globalmente">
                     </div>
                     <span> Seguridad, visibilidad y transparencia</span>
                 </div>
@@ -378,7 +378,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="cards-button-item" onclick="cardsButton(this)">
                 <div class="image-title text-lg-left text-md-center text-sm-center text-center">
                     <div class="image-container">
-                        <img src="/inversiones/assets/images/portal/iconrespaldo.png" alt="Administrados por expertos">
+                        <img src="./assets/images/portal/iconrespaldo.png" alt="Administrados por expertos">
                     </div>
                     <span>Reacción inmediata a los cambios</span>
                 </div>
@@ -392,7 +392,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="cards-button-item" onclick="cardsButton(this)">
                 <div class="image-title text-lg-left text-md-center text-sm-center text-center">
                     <div class="image-container">
-                        <img src="/inversiones/assets/images/portal/icondiver.png" alt="Acordes a cada perfil">
+                        <img src="./assets/images/portal/icondiver.png" alt="Acordes a cada perfil">
                     </div>
                     <span>Inversión sin complicaciones</span>
                 </div>
@@ -416,7 +416,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <p class="d-none d-sm-none d-md-none d-lg-block">Servicio de Gestion</p>
                 <span class="text-sg-item">
                     <span class="content-img">
-                        <img src="/inversiones/inversiones/assets/images/arrow.png" alt="">
+                        <img src="../assets/images/arrow.png" alt="">
                     </span>
                     Es tu primera vez invirtiendo <br> en fondos de inversión.
                 </span>
@@ -426,7 +426,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <p class="d-none d-sm-none d-md-none d-lg-block">Servicio de Gestion</p>
                 <span class="text-sg-item">
                     <span class="content-img">
-                        <img src="/inversiones/inversiones/assets/images/arrow.png" alt="">
+                        <img src="../assets/images/arrow.png" alt="">
                     </span>
                     Quieres informarte de forma periódica de tu inversión.</span>
             </div>
@@ -435,7 +435,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <p class="d-none d-sm-none d-md-none d-lg-block">Servicio de Gestion</p>
                 <span class="text-sg-item">
                     <span class="content-img">
-                        <img src="/inversiones/inversiones/assets/images/arrow.png" alt="">
+                        <img src="../assets/images/arrow.png" alt="">
                     </span>
                     Buscas invertir sin complicaciones y de forma simple y segura.
                 </span>
@@ -445,7 +445,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <p class="d-none d-sm-none d-md-none d-lg-block">Servicio de Gestion</p>
                 <span class="text-sg-item">
                     <span class="content-img">
-                        <img src="/inversiones/inversiones/assets/images/arrow.png" alt="">
+                        <img src="../assets/images/arrow.png" alt="">
                     </span>
                     Es tu primera vez invirtiendo en fondos de inversión.</span>
             </div>
@@ -454,7 +454,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <p class="d-none d-sm-none d-md-none d-lg-block">Servicio de Gestion</p>
                 <span class="text-sg-item">
                     <span class="content-img">
-                        <img src="/inversiones/inversiones/assets/images/arrow.png" alt="">
+                        <img src="../assets/images/arrow.png" alt="">
                     </span>
                     Quieres informarte de forma periódica de tu inversión.
                 </span>
@@ -464,7 +464,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <p class="d-none d-sm-none d-md-none d-lg-block">Servicio de Gestion</p>
                 <span class="text-sg-item">
                     <span class="content-img">
-                        <img src="/inversiones/inversiones/assets/images/arrow.png" alt="">
+                        <img src="../assets/images/arrow.png" alt="">
                     </span>
                     Buscas invertir sin complicaciones y de forma simple y segura.
                 </span>
@@ -545,10 +545,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
             <div class="col-12 col-lg-3 mt-sm-5">
                 <div class="d-flex justify-content-around align-items-center">
-                    <a href="https://facebook.com/InversionesSURAMX" target="_blank" rel="nofollow"><img src="/inversiones/assets/images/Icon-Facebook.svg" alt="Facebook" height="35"></a>
-                    <a href="https://twitter.com/InversionSURAMX" target="_blank" rel="nofollow"><img src="/inversiones/assets/images/Icon-Twitter.svg" alt="Twitter" height="35"></a>
-                    <a href="https://youtube.com/channel/UC9efrXRjvSLiUaL3qeXaCSw" target="_blank" rel="nofollow"><img src="/inversiones/assets/images/Icon-Youtube.svg" alt="Youtube" height="30"></a>
-                    <a href="https://instagram.com/inversionessuramx" target="_blank" rel="nofollow"><img src="/inversiones/assets/images/Icon-Instagram.svg" alt="Instagram" height="30"></a>
+                    <a href="https://facebook.com/InversionesSURAMX" target="_blank" rel="nofollow"><img src="./assets/images/Icon-Facebook.svg" alt="Facebook" height="35"></a>
+                    <a href="https://twitter.com/InversionSURAMX" target="_blank" rel="nofollow"><img src="./assets/images/Icon-Twitter.svg" alt="Twitter" height="35"></a>
+                    <a href="https://youtube.com/channel/UC9efrXRjvSLiUaL3qeXaCSw" target="_blank" rel="nofollow"><img src="./assets/images/Icon-Youtube.svg" alt="Youtube" height="30"></a>
+                    <a href="https://instagram.com/inversionessuramx" target="_blank" rel="nofollow"><img src="./assets/images/Icon-Instagram.svg" alt="Instagram" height="30"></a>
                 </div>
             </div>
         </div>
@@ -614,7 +614,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="col-12 col-md-6 col-lg-2">
             <h5>Instagram Post</h5>
-            <img src="/inversiones/assets/images/instagram.png" alt="Instragram RSS">
+            <img src="./assets/images/instagram.png" alt="Instragram RSS">
             <br>
             <h5>Ver más 
                 <svg width="1em" height="1em" style="margin-left: 0.5rem;" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#B7B09C" xmlns="http://www.w3.org/2000/svg">
@@ -649,6 +649,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
   </div>
-    <script src="/inversiones/src/js/vendor.min.js"></script>
+    <script src="./src/js/vendor.min.js"></script>
 </body>
 </html>
