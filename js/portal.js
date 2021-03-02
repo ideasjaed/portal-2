@@ -144,6 +144,9 @@ function cardsButton(el){
 
 
 
+$('#coll-surbono').on('hide.bs.collapse', function () {
+    $('.header-cars').css('margin', 'margin: 0 20px;');
+})
 
 
 if (window.matchMedia('(max-width: 991px)').matches)

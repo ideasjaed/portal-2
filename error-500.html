@@ -47,13 +47,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
-    <link rel="preload" as="style" href="src/css/vendor.min.css">
-<link rel="preload" as="font" href="src/css/fonts/slick.ttf" type="font/ttf">
-<link rel="preload" as="font" href="src/css/fonts/slick.woff" type="font/woff">
-<link rel="preload" as="font" href="assets/fonts/FsJoey/FSJoeyWeb-Regular.woff" type="font/woff" crossorigin="anonymous">
-<link rel="preload" as="font" href="assets/fonts/Barlow/Barlow-Regular.ttf" type="font/ttf" crossorigin="anonymous">
-    <link href="500.css" rel="stylesheet">
-    <link href="src/css/vendor.min.css" rel="stylesheet">
+    <link rel="preload" as="style" href="/src/css/vendor.min.css">
+<link rel="preload" as="font" href="/src/css/fonts/slick.ttf" type="font/ttf">
+<link rel="preload" as="font" href="/src/css/fonts/slick.woff" type="font/woff">
+<link rel="preload" as="font" href="/assets/fonts/FsJoey/FSJoeyWeb-Regular.woff" type="font/woff" crossorigin="anonymous">
+<link rel="preload" as="font" href="/assets/fonts/Barlow/Barlow-Regular.ttf" type="font/ttf" crossorigin="anonymous">
+    <link href="/src/css/vendor.min.css" rel="stylesheet">
     <script type="module">
   import {Workbox} from 'https://storage.googleapis.com/workbox-cdn/releases/6.0.2/workbox-window.prod.mjs';
   // Check that service workers are supported
@@ -89,27 +88,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </head>
 
 <body>
-    <div class="page-content fondos-inteligentes">
-        <div class="section-entry">
-            <h1 class="highlight hl-sm hl-v">Error 500</h1>
-            <div class="image-entry">
-                <img src="assets/images/portal/500.png" alt="500">
-                <div class="p-text">
-                    <h1 class="highlight hl-sm hl-v">Error 500</h1>
-                    <p style="font-size: 20px;">Una disculpa, sucedió algo inesperado.<br> Pero ya estamos trabajando para resolverlo inmediatamente.<br> Intenta visitar esta página en otro momento, por favor.</p>
-                </div>
-                <div class="bottom-button">
-                    <button class="circle-yellow btn-content btn-svg">
-                        IR A PÁGINA DE INICIO
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-                        </svg>
+    <div class="error-ocre">
+        <div class="error-linea row">
+            <div class="col-md-7 col-sm-12">
+                <h1 class="highlight hl-sm hl-v errores">Error 500</h1>
+                <p class="disculpa">Una disculpa, sucedió algo inesperado.<br> Pero ya estamos trabajando para resolverlo inmediatamente.<br> Intenta visitar esta página en otro momento, por favor.</p>
+                   <a href="index.html"><button class="circle-yellow btn-content btn-svg">
+                        IR A PÁGINA DE INICIO &rarr;
                     </button>
-                </div>
+                    </a> 
+            </div>
+            <div class="col-md-5 col-sm-12">
+                <img src="/assets/images/portal/500.png" class="img-fluid" alt="Error 500">
             </div>
         </div>
-    </div>    
-    <script src="src/js/vendor.min.js"></script>
+        </div>
+    <script src="/src/js/vendor.min.js"></script>
 </body>
 
 </html>
